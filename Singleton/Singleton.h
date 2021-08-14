@@ -11,6 +11,7 @@ class Singleton{
         Singleton(const Singleton&) = delete;
 
         // This function will access the class, thereby removing the ability for this class from being initialized anywhere else.
+            // Acts as the accessor
         static Singleton& Get(){
 
             // s_Instance is created within static memory upon first call. Each time this function is called, this instance can access the members.
